@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #102a43;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #102a43;
+}
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navegacao-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.navegacao-botao{
+    font-size: 1.5rem;
+    color: #052f57;
+    background-color: transparent;
+    border-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.navegacao-botao:hover{
+    color: #fca311;
+    transform: rotate(90deg);
+}
+.navegacao-logo{
+    font-size: 1rem;
+}
+.navegacao-links a{
+    color: #052f57;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+.navegacao-links a:hover{
+    color: #fca311;
+    background-color: #e5e5e5;
+    padding-left: 1.5rem;
+}
+.navegacao-icones-sociais{
+    display: none;
+}
+.navegacao-links{
+    height: 0;
+    overflow: hidden;
+    transform: all .3s linear;
+}
+.mostrar-links{
+    height: 10rem;
+}
+@media screen and (min-width: 800px) {
+    .navegacao-container{
+        width: 1170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .navegacao-cabecalho{
+        padding: 0;
+    }
+    .navegacao-botao{
+        display: none;
+    }
+    .navegacao-links{
+        height: auto;
+        display: flex;
+    }
+    .navegacao-links a{
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    .navegacao-links a:hover{
+        padding: 0;
+        background-color: transparent;
+    }
+    .navegacao-icones-sociais{
+        display: flex;
+    }
+    .navegacao-icones-sociais a{
+            margin: 0 0.5rem;
+            color: #052f57;
+            transition: all 0.3s ease;
+    }
+    .navegacao-icones-sociais a:hover{
+        color: #fca311;
+    }
+}
